@@ -1,0 +1,26 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+#overskrift {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  font-size: 50px;
+  margin: 50px 0 0 50px;
+}
+
+#portraet {
+  display: block;
+  margin: -40px auto 0;
+  width: 45%;
+}
+/*# sourceMappingURL=style.css.map */
