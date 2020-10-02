@@ -1,9 +1,11 @@
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
 }
 
 body{
-    background-color: black;
+    background-color: white;
+    
 }
 
 #overskrift{
@@ -11,11 +13,38 @@ body{
     display: flex;
     justify-content: start;
     font-size: 50px;
-    margin: 50px 0 0 50px;
+    margin: 0 0 0 50px;
+    padding: 50px 0 0 0;
 }
 
 #portraet{
     display: block;
     margin: -40px auto 0;
-    width: 45%;
+    width: 41%;
+}
+
+#bg-skift{
+    background-color: black;
+    border-radius: 25px;
+}
+
+#drip{
+    display: block;
+    margin: 0 auto 0;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+#box1{
+    background-color: black;
+    height: 150px;
+    width: 250px;
+    border-radius: 25px;
+    margin: 109px 0 0 435px;
+}
+:hover#box1{
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.1);
 }
