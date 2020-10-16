@@ -13,7 +13,7 @@ body {
   background-color: white;
 }
 
-#overskrift {
+.overskrift {
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21,8 +21,8 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  font-size: 50px;
-  margin: 0 0 0 50px;
+  font-size: 4vw;
+  margin: 0 0 0 4%;
   padding: 50px 0 0 0;
   position: relative;
   z-index: 1;
@@ -39,6 +39,7 @@ body {
 #bg-skift {
   background-color: black;
   border-radius: 25px;
+  height: 100%;
 }
 
 #drip {
@@ -51,6 +52,15 @@ body {
 
 h3 {
   display: none;
+}
+
+h2 {
+  position: absolute;
+  color: white;
+  font-size: 2vw;
+  margin: 0 0 0 4%;
+  padding: 40px 0 0 0;
+  z-index: 1;
 }
 
 img {
@@ -225,6 +235,12 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.bg {
+  background-color: black;
+  border-radius: 25px;
+  height: 100%;
 }
 
 @media only screen and (max-width: 700px) {

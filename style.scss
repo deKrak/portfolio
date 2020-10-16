@@ -16,12 +16,12 @@ body{
     background-color: $secondary-color;
 }
 
-#overskrift{
+.overskrift{
     color: $secondary-color;
     display: flex;
     justify-content: start;
-    font-size: 50px;
-    margin: 0 0 0 50px;
+    font-size: 4vw;
+    margin: 0 0 0 4%;
     padding: 50px 0 0 0;
     position: relative;
     z-index: 1;
@@ -38,6 +38,7 @@ body{
 #bg-skift{
     background-color: $primary-color;
     border-radius: 25px;
+    height: 100%;
 }
 
 #drip{
@@ -51,6 +52,14 @@ body{
 h3{display: none;
 }
 
+h2{
+    position: absolute;
+    color: $secondary-color;
+    font-size: 2vw;
+    margin: 0 0 0 4%;
+    padding: 40px 0 0 0;
+    z-index: 1;
+}
 
 @mixin box {
     background-color: $primary-color;
@@ -127,7 +136,11 @@ a{
     margin: -8.5% 0 0 71.5%;
 }
 
-
+.bg{
+    background-color: $primary-color;
+    border-radius: 25px;
+    height: 100%;
+}
 
 @media only screen and (max-width: 700px){
     img{
