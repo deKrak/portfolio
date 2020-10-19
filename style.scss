@@ -63,9 +63,9 @@ h2{
 
 @mixin box {
     background-color: $primary-color;
-    height: 200px;
-    width: 300px;
-    border-radius: 25px;
+    height: 15.625vw;
+    width: 23.4375vw;
+    border-radius: 1.953125vw;
     z-index: 1;
     position: relative;
     display: flex;
@@ -84,6 +84,16 @@ h2{
             flex-direction: row;
             align-items: center;;
         }
+        .billede{
+            width: 10vw;
+        }
+        img{
+            width: 10vw;
+        }
+        #billedeo{
+            height: 140px;
+            width: auto;
+        }
     }
 }
 
@@ -95,7 +105,17 @@ h2{
 }
 
 img{
-    height: 200px;
+    height: auto;
+    width: 200px;
+}
+
+#billedeo{
+    height: auto;
+    width: 200px;
+}
+
+.billede{
+    height: 10vw;
     width: auto;
 }
 
@@ -106,12 +126,12 @@ a{
 #streg1{
     @include streg;
     height: 127px;
-    margin: 0 0 0 45.5%;
+    margin: 0 0 0 60.5%;
 }
 
 #box1{
     @include box;
-    margin: 10% 0 0 35%;
+    margin: 10% 0 0 50%;
 }
 
 #streg2{
@@ -136,24 +156,45 @@ a{
     margin: -8.5% 0 0 71.5%;
 }
 
+#streg4{
+    @include streg;
+    height: 50vw;
+    margin: 0 0 0 41.5%;
+}
+
+#box4{
+    @include box;
+    margin: -8.5% 0 0 31.5%;
+}
+
 .bg{
     background-color: $primary-color;
     border-radius: 25px;
     height: 40vw;
 }
 
+#navn{
+    margin: 30vw 0 0 75vw;
+}
+
 @media only screen and (max-width: 700px){
     img{
         height: 150px;
     }
+    .billede{
+        height: 20vw;
+    }
     #streg1{
         margin: 0 0 0 46.5%;
-        height: 100%;
+        height: 150%;
     }
     #streg2{
         display: none;
     }
     #streg3{
+        display: none;
+    }
+    #streg4{
         display: none;
     }
     #box1{
@@ -165,6 +206,10 @@ a{
         width: 50%;
     }
     #box3{
+        margin: 5% auto;
+        width: 50%;
+    }
+    #box4{
         margin: 5% auto;
         width: 50%;
     }

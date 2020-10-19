@@ -64,7 +64,17 @@ h2 {
 }
 
 img {
-  height: 200px;
+  height: auto;
+  width: 200px;
+}
+
+#billedeo {
+  height: auto;
+  width: 200px;
+}
+
+.billede {
+  height: 10vw;
   width: auto;
 }
 
@@ -78,14 +88,14 @@ a {
   position: absolute;
   z-index: 0;
   height: 127px;
-  margin: 0 0 0 45.5%;
+  margin: 0 0 0 60.5%;
 }
 
 #box1 {
   background-color: black;
-  height: 200px;
-  width: 300px;
-  border-radius: 25px;
+  height: 15.625vw;
+  width: 23.4375vw;
+  border-radius: 1.953125vw;
   z-index: 1;
   position: relative;
   display: -webkit-box;
@@ -97,7 +107,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 10% 0 0 35%;
+  margin: 10% 0 0 50%;
 }
 
 #box1:hover {
@@ -127,6 +137,19 @@ a {
           align-items: center;
 }
 
+#box1:hover .billede {
+  width: 10vw;
+}
+
+#box1:hover img {
+  width: 10vw;
+}
+
+#box1:hover #billedeo {
+  height: 140px;
+  width: auto;
+}
+
 #streg2 {
   background-color: black;
   width: 25px;
@@ -138,9 +161,9 @@ a {
 
 #box2 {
   background-color: black;
-  height: 200px;
-  width: 300px;
-  border-radius: 25px;
+  height: 15.625vw;
+  width: 23.4375vw;
+  border-radius: 1.953125vw;
   z-index: 1;
   position: relative;
   display: -webkit-box;
@@ -182,6 +205,19 @@ a {
           align-items: center;
 }
 
+#box2:hover .billede {
+  width: 10vw;
+}
+
+#box2:hover img {
+  width: 10vw;
+}
+
+#box2:hover #billedeo {
+  height: 140px;
+  width: auto;
+}
+
 #streg3 {
   background-color: black;
   width: 25px;
@@ -193,9 +229,9 @@ a {
 
 #box3 {
   background-color: black;
-  height: 200px;
-  width: 300px;
-  border-radius: 25px;
+  height: 15.625vw;
+  width: 23.4375vw;
+  border-radius: 1.953125vw;
   z-index: 1;
   position: relative;
   display: -webkit-box;
@@ -237,24 +273,115 @@ a {
           align-items: center;
 }
 
+#box3:hover .billede {
+  width: 10vw;
+}
+
+#box3:hover img {
+  width: 10vw;
+}
+
+#box3:hover #billedeo {
+  height: 140px;
+  width: auto;
+}
+
+#streg4 {
+  background-color: black;
+  width: 25px;
+  position: absolute;
+  z-index: 0;
+  height: 50vw;
+  margin: 0 0 0 41.5%;
+}
+
+#box4 {
+  background-color: black;
+  height: 15.625vw;
+  width: 23.4375vw;
+  border-radius: 1.953125vw;
+  z-index: 1;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: -8.5% 0 0 31.5%;
+}
+
+#box4:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#box4:hover h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#box4:hover a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#box4:hover .billede {
+  width: 10vw;
+}
+
+#box4:hover img {
+  width: 10vw;
+}
+
+#box4:hover #billedeo {
+  height: 140px;
+  width: auto;
+}
+
 .bg {
   background-color: black;
   border-radius: 25px;
   height: 40vw;
 }
 
+#navn {
+  margin: 30vw 0 0 75vw;
+}
+
 @media only screen and (max-width: 700px) {
   img {
     height: 150px;
   }
+  .billede {
+    height: 20vw;
+  }
   #streg1 {
     margin: 0 0 0 46.5%;
-    height: 100%;
+    height: 150%;
   }
   #streg2 {
     display: none;
   }
   #streg3 {
+    display: none;
+  }
+  #streg4 {
     display: none;
   }
   #box1 {
@@ -266,6 +393,10 @@ a {
     width: 50%;
   }
   #box3 {
+    margin: 5% auto;
+    width: 50%;
+  }
+  #box4 {
     margin: 5% auto;
     width: 50%;
   }
