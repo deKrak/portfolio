@@ -61,7 +61,7 @@ body{
 .linkp{
     position: absolute;
     transform: translate(-50%);
-    margin: 20vw 0 0 86vw;
+    margin: 1vw 0 0 86vw;
     font-size: 1.5vw;
   }
   
@@ -149,7 +149,7 @@ h3{display: none;
 
 @mixin streg {
     background-color: $primary-color;
-    width: 25px;
+    width: 1.953125vw;
     position: absolute;
     z-index: 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -221,13 +221,75 @@ a{
 .bg{
     background-color: $primary-color;
     border-radius: 25px;
-    height: 46.5vw;
+    height: 28vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #navn{
     margin: 30vw 0 0 75vw;
 }
 
+@mixin boxrn {
+    background-color: $primary-color;
+    height: auto;
+    padding: 0.5vw;
+    width: fit-content;
+    border-radius: 1.953125vw;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.billedern{
+    border-radius: 1.953125vw;
+}
+
+#boxrn1{
+    @include boxrn;
+    margin: 7vw 0 0 2vw;
+}
+
+#stregrn1{
+    @include streg;
+    height: 7vw;
+    margin: 0 0 0 9.5vw;
+}
+
+#boxrn2{
+    @include boxrn;
+    margin: -30vw 0 0 24.5vw;
+}
+
+#stregrn2{
+    @include streg;
+    height: 13vw;
+    margin: 0 0 0 32vw;
+}
+
+#boxrn3{
+    @include boxrn;
+    margin: -30vw 0 0 47vw;
+}
+
+#stregrn3{
+    @include streg;
+    height: 18vw;
+    margin: 0 0 0 54.5vw;
+}
+
+#boxrn4{
+    @include boxrn;
+    margin: -30vw 0 0 69.5vw;
+}
+
+#stregrn4{
+    @include streg;
+    height: 23vw;
+    margin: 0 0 0 77vw;
+}
 @media only screen and (max-width: 700px){
     img{
         height: 150px;
@@ -265,6 +327,7 @@ a{
         width: 50%;
     }
     }
+
 @media only screen and (min-width: 1500px){
         body{
             background-color: red;
