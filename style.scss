@@ -5,6 +5,7 @@
 
 $primary-color: black;
 $secondary-color: white;
+$tertiary-color: rgb(236, 236, 236); 
 
 ::-webkit-scrollbar {
     display: none;
@@ -13,7 +14,7 @@ $secondary-color: white;
 }
 
 body{
-    background-color: $secondary-color;
+    background-color: $tertiary-color;
 }
 
 .overskrift{
@@ -27,9 +28,24 @@ body{
     z-index: 1;
 }
 
+.overskrift2{
+    color: $secondary-color;
+    font-size: 4vw;
+    margin: -10.5vw 0 2vw 20vw;
+    padding: 0 0 0 0;
+    position: relative;
+    z-index: 1;
+}
+
+.logotop{
+    margin: 2vw 0 0 1vw;
+    height: auto;
+    width: 15vw;
+}
+
 #portraet{
     display: block;
-    margin: -40px auto 0;
+    margin: -35vw auto 0;
     width: 41%;
     height: auto;
     z-index: 0;
@@ -39,25 +55,58 @@ body{
     background-color: $primary-color;
     border-radius: 25px;
     height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#drip{
-    display: block;
-    margin: 0 auto 0;
-    width: 100%;
+.linkp{
     position: absolute;
-    z-index: -1;
-}
+    transform: translate(-50%);
+    margin: 20vw 0 0 86vw;
+    font-size: 1.5vw;
+  }
+  
+  .link{
+    display: block;
+    color: $secondary-color;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .link::after{
+    content: "";
+    background: white;
+      mix-blend-mode: exclusion;
+    width: calc(100% + 20px);
+    border-radius: 25px;
+    height: 0;
+    position: absolute;
+    bottom: -4px;
+    left: -10px;
+      transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  }
+  
+  .link:hover::after{
+      height: calc(100% + 8px)
+  }
 
 h3{display: none;
 }
 
-h2{
+.h2main{
     position: absolute;
     color: $secondary-color;
     font-size: 2vw;
     margin: 0 0 0 4%;
     padding: 40px 0 0 0;
+    z-index: 1;
+}
+
+.h2rn{
+    position: relative;
+    color: $secondary-color;
+    font-size: 2vw;
+    margin: -8vw 0 5vw 20vw;
+    padding: 8vw 0 0 0;
     z-index: 1;
 }
 
@@ -71,6 +120,7 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     
     &:hover{
         cursor: pointer;
@@ -102,6 +152,7 @@ h2{
     width: 25px;
     position: absolute;
     z-index: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 img{
@@ -170,7 +221,7 @@ a{
 .bg{
     background-color: $primary-color;
     border-radius: 25px;
-    height: 40vw;
+    height: 46.5vw;
 }
 
 #navn{
@@ -235,3 +286,43 @@ a{
             width: 50%;
         }
         }
+
+/* moving dots on main */
+$particleSize: 20vmin;
+          $animationDuration: 10s;
+          $amount: 15;
+          .background span {
+            width: $particleSize;
+            height: $particleSize;
+            border-radius: $particleSize;
+            backface-visibility: hidden;
+            position: absolute;
+            animation-name: move;
+            animation-duration: $animationDuration;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            $colors: (
+              #5216F2,
+              #1E1FDB,
+              #1650F2
+            );
+            @for $i from 1 through $amount {
+              &:nth-child(#{$i}) {
+                color: nth($colors, random(length($colors)));
+                top: random(100) * 1%;
+                left: random(100) * 1%;
+                animation-duration: (random($animationDuration * 10) / 10) * 1s + 10s;
+                animation-delay: random(($animationDuration + 10s) * 10) / 10 * -1s;
+                transform-origin: (random(50) - 25) * 1vw (random(50) - 25) * 1vh;
+                $blurRadius: (random() + 0.5) * $particleSize * 0.5;
+                $x: if(random() > 0.5, -1, 1);
+                box-shadow: ($particleSize * 2 * $x) 0 $blurRadius currentColor;
+              }
+            }
+        }
+          
+          @keyframes move {
+            100% {
+              transform: translate3d(0, 0, 1px) rotate(360deg);
+    }
+}
