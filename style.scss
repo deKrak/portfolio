@@ -36,9 +36,22 @@ body{
     position: relative;
     z-index: 1;
 }
+.overskrift3{
+    color: $secondary-color;
+    font-size: 4vw;
+    margin: -7vw 0 2vw 20vw;
+    padding: 0 0 0 0;
+    position: relative;
+    z-index: 1;
+}
 
 .logotop{
     margin: 2vw 0 0 1vw;
+    height: auto;
+    width: 15vw;
+}
+.logotop2{
+    margin: 5vw 0 0 1vw;
     height: auto;
     width: 15vw;
 }
@@ -221,7 +234,7 @@ a{
 .bg{
     background-color: $primary-color;
     border-radius: 25px;
-    height: 28vw;
+    height: 31vw;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -249,46 +262,117 @@ a{
 
 #boxrn1{
     @include boxrn;
-    margin: 7vw 0 0 2vw;
+    margin: 7vw 0 0 7vw;
 }
 
 #stregrn1{
     @include streg;
     height: 7vw;
-    margin: 0 0 0 9.5vw;
+    margin: 0 0 0 14.5vw;
 }
 
 #boxrn2{
     @include boxrn;
-    margin: -30vw 0 0 24.5vw;
+    margin: -30vw 0 0 29.5vw;
 }
 
 #stregrn2{
     @include streg;
     height: 13vw;
-    margin: 0 0 0 32vw;
+    margin: 0 0 0 37vw;
 }
 
 #boxrn3{
     @include boxrn;
-    margin: -30vw 0 0 47vw;
+    margin: -30vw 0 0 52vw;
 }
 
 #stregrn3{
     @include streg;
     height: 18vw;
-    margin: 0 0 0 54.5vw;
+    margin: 0 0 0 59.5vw;
 }
 
 #boxrn4{
     @include boxrn;
-    margin: -30vw 0 0 69.5vw;
+    margin: -30vw 0 0 74.5vw;
 }
 
 #stregrn4{
     @include streg;
     height: 23vw;
-    margin: 0 0 0 77vw;
+    margin: 0 0 0 82vw;
+}
+
+.broedtekst{
+    color: $secondary-color;
+    margin: 0 0 0 20vw;
+    line-height: 2;
+    font-size: 1vw;
+}
+
+@mixin boxos {
+    background-color: $primary-color;
+    height: auto;
+    padding: 0.5vw;
+    width: fit-content;
+    border-radius: 1.953125vw;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#boxos1{
+    @include boxrn;
+    margin: 7vw 0 0 7vw;
+}
+#stregos1{
+    @include streg;
+    height: 115vw;
+    margin: 0 0 0 25vw;
+}
+.billedeos{
+    border-radius: 1.953125vw;
+    width: 48vw;
+}
+#boxos2{
+    @include boxrn;
+    margin: 3vw 0 0 42vw;
+}
+#boxos3{
+    @include boxrn;
+    margin: 3vw 0 0 7vw;
+}
+#stregos2{
+    @include streg;
+    height: 88vw;
+    margin: 0 0 0 75vw;
+}
+#boxos4{
+    @include boxrn;
+    margin: 3vw 0 0 42vw;
+}
+#boxos5{
+    @include boxrn;
+    margin: 3vw 0 0 7vw;
+}
+#streghoc1{
+    @include streg;
+    height: 57vw;
+    margin: 0 0 0 25vw;
+}
+#stregek1{
+    @include streg;
+    height: 69vw;
+    margin: 0 0 0 25vw;
+}
+#stregek2{
+    @include streg;
+    height: 100vw;
+    margin: 0 0 0 75vw;
 }
 @media only screen and (max-width: 700px){
     img{
