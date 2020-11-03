@@ -477,7 +477,7 @@ $particleSize: 20vmin;
 
 .alert {
     padding: 20px;
-    background-color: #f44336; /* Red */
+    background-color: #f44336;
     color: white;
     border-radius: 25px;
     margin: 4vw 0 0 2.5%;
@@ -485,8 +485,7 @@ $particleSize: 20vmin;
     z-index: 2;
     width: 90%;
   }
-  
-  /* The close button */
+
   .closebtn {
     margin-left: 15px;
     color: white;
@@ -497,8 +496,6 @@ $particleSize: 20vmin;
     cursor: pointer;
     transition: 0.3s;
   }
-  
-  /* When moving the mouse over the close button */
   .closebtn:hover {
     color: black;
   }
