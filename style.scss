@@ -474,3 +474,31 @@ $particleSize: 20vmin;
               transform: translate3d(0, 0, 1px) rotate(360deg);
     }
 }
+
+.alert {
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    border-radius: 25px;
+    margin: 4vw 0 0 2.5%;
+    position: absolute;
+    z-index: 2;
+    width: 90%;
+  }
+  
+  /* The close button */
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* When moving the mouse over the close button */
+  .closebtn:hover {
+    color: black;
+  }
